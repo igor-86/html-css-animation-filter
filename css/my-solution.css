@@ -1,0 +1,58 @@
+/* Ex 1 */
+.ex-1-square{
+    transition: background-color 0.8s ease-in-out;
+}
+
+.ex-1-square:hover{
+    background-color: red;;
+}
+/* Ex 2 */
+.ex-2-square{
+    transition: all 1s ease-in-out;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+/* Ex 3 */
+.ex-3-square{
+    transition: all .6s ease-in-out;
+}
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+/* Ex 4 */
+.ex-4-square{
+    transition: all 1s ease-in-out;
+}
+.ex-4-square:hover{
+    opacity: 0;
+}
+/* Ex 5 */
+.ex-5-square{
+    transition: all 0.6s ease-out;
+}
+.ex-5-square:hover{
+    transform: scale(1.4);
+}
+.ex-5-square:active{
+    transform: scale(1);
+}
+/* Ex 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+/* Ex 7 */
+.ex-7-img{
+    transition: all 1s ease-in-out;
+}
+.ex-7-img:hover{
+    filter: sepia(1) saturate(.6);
+}
+/* Ex 8 */
+.ex-8-img{
+    transition: all .8s ease-out;
+}
+.ex-8-img:hover{
+    filter: sepia(.4) saturate(.9);
+    border-radius: 15px;
+}
