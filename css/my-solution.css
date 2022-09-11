@@ -56,3 +56,132 @@
     filter: sepia(.4) saturate(.9);
     border-radius: 15px;
 }
+/* Ex 9 */
+.ex-9-img{
+    transition: all 1s ease-out;
+}
+.ex-9-img:hover{
+    filter: sepia(.9) saturate(.5);
+    border-radius: 15px;
+    transform: scale(1.3);
+}
+/* Ex 10 */
+.ex-10-icon{
+    animation: myAnimation .5s linear infinite;
+}
+@keyframes myAnimation {
+    0%{
+        transform: rotate(1turn);
+    }
+}
+/* Ex 11 */
+.ex-11-icon:hover{
+    animation: second 1s linear;
+}
+@keyframes second {
+    0%{
+        transform: rotate(0);
+    }
+    80%{
+        transform: rotate(315deg);
+    }
+    90%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+/* Ex 12 */
+.ex-12-top-white{
+    animation: top 2s linear infinite;
+}
+.ex-12-bottom-white{
+    animation: bottom 1s ease-out infinite;
+}
+@keyframes top {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left:calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes bottom {
+    0%{
+        left: 10%;
+    }
+    40%{
+        left:calc(100% - 60px);
+    }
+    70%{
+        left:calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+/* Ex 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: moveTop 1s linear;
+}
+@keyframes moveTop {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: moveBottom 1s linear;
+}
+@keyframes moveBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
